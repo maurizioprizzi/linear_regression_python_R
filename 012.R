@@ -1,6 +1,8 @@
+# This file was created in RStudio
 # import the data
 dataset = read.csv("Salary_Data.csv")
 
+# we need to install the caTools at this point
 library(caTools)
 set.seed(123)
 split = sample.split(dataset$Salary, SplitRatio = 2/3)
